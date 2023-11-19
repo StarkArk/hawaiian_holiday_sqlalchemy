@@ -22,7 +22,7 @@ from sqlalchemy import create_engine, func, inspect, text, exc
 from sqlalchemy import create_engine, exc
 
 # e = create_engine("sqlite:///Resources/hawaii.sqlite", echo=False, pool_pre_ping=True)
-e = create_engine("sqlite:///Resources/hawaii.sqlite", pool_recycle=3600, echo=True)
+e = create_engine("sqlite:///hawaii.sqlite", pool_recycle=3600, echo=True)
 c = e.connect()
 
 try:
